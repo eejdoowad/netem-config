@@ -103,7 +103,7 @@ case "$1" in
 
   start)
 
-    start $2"mbit" $3"%" $BUFFERSIZE3
+    start $2"mbit" $3"%" $4
     ;;
 
   startm)
@@ -113,27 +113,41 @@ case "$1" in
 
   start1)
 
-    start $BW1 $LOSS1
+    start $BW1 $LOSS1 $BUFFERSIZE3
     ;;
 
    start2)
 
-    start $BW1 $LOSS2
+    start $BW1 $LOSS2 $BUFFERSIZE3
     ;;
 
    start3)
 
-    start $BW2 $LOSS1
+    start $BW2 $LOSS1 $BUFFERSIZE3
     ;;
 
    start4)
 
-    start $BW2 $LOSS2
+    start $BW2 $LOSS2 $BUFFERSIZE3
+    ;;
+
+   start5)
+
+    start $BW3 $LOSS3 $BUFFERSIZE1
+    ;;
+
+   start6)
+
+    start $BW3 $LOSS3 $BUFFERSIZE2
+    ;;
+   start7)
+
+    start $BW3 $LOSS3 $BUFFERSIZE2
     ;;
 
   limit)
 
-	start 250kbit 0%
+	start 250kbit 0% $BUFFERSIZE3
 	;;
 
   stop)
@@ -155,7 +169,7 @@ case "$1" in
     pwd=$(pwd)
     echo "Arguments:"
     echo ""
-    echo "    start {Bandwidth in mbit} {Loss in %}  (give numbers only, BufferSize=$BUFFERSIZE3)"
+    echo "    start {Bandwidth in mbit} {Loss in %} {BufferSize} (give numbers only)"
     echo "    startm {Bandwidth} {Loss} {BufferSize}    (you must specify units) "
     echo ""
     echo "    DEFAULTS FOR EXPERIMENT 1:"
