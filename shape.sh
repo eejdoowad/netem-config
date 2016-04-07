@@ -92,10 +92,10 @@ show() {
 	echo "$IF1:"
     $TC -s qdisc ls dev $IF1
     echo ""
-    echo ""
-    echo "$IF2:"
-    $TC -s qdisc ls dev $IF2
-    echo ""
+    # echo ""
+    # echo "$IF2:"
+    # $TC -s qdisc ls dev $IF2
+    # echo ""
 
 }
 
