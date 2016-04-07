@@ -83,7 +83,7 @@ start() {
 stop() {
 
     $TC qdisc del dev $IF1 root
-    $TC qdisc del dev $IF2 root
+    # $TC qdisc del dev $IF2 root
 
 }
 
