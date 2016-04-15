@@ -21,7 +21,7 @@ RTT=50ms			# as number of milliseconds
 BW1=3mbit			# Bandwidth
 BW2=10mbit			# Bandwidth
 LOSS1=0%			# Packet loss
-LOSS2=1%			# Packet loss
+LOSS2=2%			# Packet loss
 
 # PARAMETERS FOR TEST 2 IF WE DO IT
 BW3=5mbit
@@ -200,7 +200,7 @@ TEST 1 PARAMETERS:
 BW1=3mbit           # Bandwidth
 BW2=10mbit          # Bandwidth
 LOSS1=0%            # Packet loss
-LOSS2=1%            # Packet loss
+LOSS2=2%            # Packet loss
 
 # TEST 2 PARAMETERS
 BW3=5mbit
